@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,10 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="Klava.cs">
+    <None Include="PartialExt_Klava.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Klava.tt</DependentUpon>
+      <DependentUpon>PartialExt_Klava.tt</DependentUpon>
     </None>
   </ItemGroup>
 
@@ -18,17 +18,31 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Ext_Klava.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ext_Klava.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Mouse.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Update="Klava.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Klava.tt</DependentUpon>
     </Compile>
+    <Compile Update="PartialExt_Klava.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>PartialExt_Klava.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Klava.tt">
+    <None Update="PartialExt_Klava.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Klava.cs</LastGenOutput>
+      <LastGenOutput>PartialExt_Klava.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

@@ -8,17 +8,8 @@ namespace ClickerManDVA
     {
         static void Main(string[] args)
         {
-            (new System.Klava())
-                .VK_Q_Is(x => System.Console.WriteLine("true"), x => System.Console.WriteLine("false"))
-                .Sleep()
-                .VK_Q_Down()
-                .Sleep()
-                .VK_Q_Is(x => System.Console.WriteLine("true"), x => System.Console.WriteLine("false"))
-                .Sleep()
-                .VK_Q_Up()
-                .VK_Q_Is(x => System.Console.WriteLine("true"), x => System.Console.WriteLine("false"))
-            ;
-
+            System.Mouse.Test_SuperClickManiak();
+            //System.Mouse.Test_LR_Is();
         }
     }
 }
