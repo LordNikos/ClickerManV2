@@ -1,0 +1,1 @@
+# ClickerManV2
